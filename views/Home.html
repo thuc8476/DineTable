@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="home">
+        <div class="left px-3">
+            <div class="left-head d-flex justify-content-center align-items-center ">
+                <h3 class="item hidden">PICK SOTOR</h3>
+                <i class="fa-solid fa-house item"></i>
+                <div class="menu-icon" onclick=handelmenu()>
+                    <i class="fa-solid fa-bars item"></i>
+                    <i class="fa-solid fa-arrow-left item hidden"></i>
+                </div>
+            </div>
+            <div class="menu-left">
+                <div class="left-conten py-3">
+                    <i class="fa-solid fa-compass"></i>
+                    <p class="item hidden ms-3">DASHBOAR</p>
+                </div>
+                <h6 class="item hidden py-2">UI ELEMENTS</h6>
+                <div class="left-conten py-3">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p class="item hidden ms-3">RESRERVATION</p>
+                </div>
+                <div class="left-conten py-3">
+                    <i class="fa-solid fa-compass"></i>
+                    <p class="item hidden ms-3">ORDER FOOD</p>
+                </div>
+                <div class="left-conten py-3">
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                    <p class=" item hidden ms-3">PAY BILL</p>
+                </div>
+                <div class="left-conten py-3">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p class="item hidden ms-3">INFORMATOPM</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <nav class="navbar navbar-expand-lg navbar-light bg-pink icon">
+                <div class="container-fluid">
+                    <div class="d-flex">
+                        <i class="px-3 fa-solid fa-magnifying-glass"></i>
+                        <i class="px-3 fa-solid fa-bell"></i>
+                        <i class="px-3 fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="navbar-nav ms-auto position-relative">
+                        <a href="#"><img  src="../img/458117004_122166637526222100_8366690104172427642_n.jpg"
+                                class="rounded-circle use-img "></a>
+                        <div class="login-menu position-absolute bg-secondary hidden">
+                            <li>Username</li>
+                            <li>My Profile</li>
+                            <li>Setting</li>
+                            <li>Logout</li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="right-main">
+                <div class="box">
+                    <p>dashboar</p>
+                </div>
+                <div class="box">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-3 p-3 tables">
+                            <!-- Modal -->
+<div class="modal fade" id="booking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">TABLE BOOKING</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Customer Name</label>
+                  <input type="email" class="form-control" id="Customer-name" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" id="" class="form-label">Quantily</label>
+                  <input  type="number" class="form-control" id="Quantily">
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+          <button onclick=booking() type="button" class="btn btn-primary">Gửi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                            <!-- <div class="col">
+                                <div class="card p-2">
+                                    <div class="number-circle">1</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/7185/7185630.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-success"> <i class="fas fa-plus"></i> Add</button>
+                                        <button class="btn btn-danger"> <i class="fa-solid fa-cart-shopping">
+                                            </i>Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">2</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/7185/7185630.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-success"><i class="fas fa-plus"></i> Add</button>
+                                        <button class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i>
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">3</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">4</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">5</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">6</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">7</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">8</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>oder</p>
+                </div>
+                <div class="box">
+                    <p>paybill</p>
+                </div>
+                <div class="box">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-3 p-3">
+                            <div class="col">
+                                <div class="card p-2">
+                                    <div class="text">
+                                        <div class="number-circle">1</div>
+                                        <h5>hamberger</h5>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
+                                    
+                                    <img src="https://cdn-icons-png.flaticon.com/128/7185/7185630.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                     
+                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">2</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/7185/7185630.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-success"><i class="fas fa-plus"></i> Add</button>
+                                        <button class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i>
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">3</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">4</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">5</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">6</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">7</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="number-circle">8</div>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2251/2251855.png" class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body text-center">
+                                        <button class="btn btn-warning">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/api.js"></script>
+    <script src="../js/getTable.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
