@@ -87,6 +87,17 @@ h6 {
    .login-menu {
     right: 0;
     top: 40px;
+    z-index: 1;
+    border-radius: 10px;
+    li {
+        padding: 5px 10px;
+        white-space:nowrap;
+        border-bottom: 1px solid white;
+        &:hover {
+           background-image: linear-gradient(#ff9a9e, #fecfef , #fecfef);
+           color: white;
+        }
+    }
    }
     .right-main {
         .box{

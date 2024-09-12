@@ -47,12 +47,6 @@
       "customerName": "",
       "quantity": null,
       "status": false
-    },
-    {
-      "id": "9",
-      "customerName": "",
-      "quantity": null,
-      "status": false
     }
   ]
 }
